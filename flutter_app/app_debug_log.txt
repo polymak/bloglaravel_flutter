@@ -1,0 +1,248 @@
+[2026-03-13T19:36:44.289954] ===== TEST 1 START =====
+[2026-03-13T19:37:08.079846] Calling API: login with email poly@gmail.com
+[2026-03-13T19:37:08.989586] Login success for user: poly@gmail.com
+[2026-03-13T19:51:05.046292] ===== TEST 1 START =====
+[2026-03-13T19:51:23.882745] Calling API: login with email poly@gmail.com
+[2026-03-13T19:51:24.960835] Login success for user: poly@gmail.com with role: admin
+[2026-03-13T19:51:35.068646] Calling API: fetchUsers with token: 29|K82eV12dn1H86z3Hg...
+[2026-03-13T19:51:35.119799] Calling API: fetchUsers with token: 29|K82eV12dn1H86z3Hg...
+[2026-03-13T19:51:35.834627] Token is valid - can access posts endpoint
+[2026-03-13T19:51:35.868120] Token is valid - can access posts endpoint
+[2026-03-13T19:51:36.153421] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T19:51:36.173913] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T19:53:50.596431] Calling API: login with email admin@test.com
+[2026-03-13T19:53:51.508281] Login success for user: admin@test.com with role: admin
+[2026-03-13T19:53:54.143033] Calling API: fetchUsers with token: 30|63RKlQaVJenNUlZFX...
+[2026-03-13T19:53:54.174920] Calling API: fetchUsers with token: 30|63RKlQaVJenNUlZFX...
+[2026-03-13T19:53:54.961896] Token is valid - can access posts endpoint
+[2026-03-13T19:53:54.972645] Token is valid - can access posts endpoint
+[2026-03-13T19:53:55.312087] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:31:09.041117] ===== TEST 1 START =====
+[2026-03-13T20:31:40.295607] Calling API: login with email admin@example.com
+[2026-03-13T20:31:41.456254] ERROR: Login network error: Exception: Invalid login credentials
+[2026-03-13T20:31:55.009900] Calling API: login with email admin@example.com
+[2026-03-13T20:31:56.292191] ERROR: Login network error: Exception: Invalid login credentials
+[2026-03-13T20:32:10.728469] Calling API: login with email poly@gmail.com
+[2026-03-13T20:32:11.586449] Login success for user: poly@gmail.com with role: admin
+[2026-03-13T20:32:11.611946] Token stored successfully
+[2026-03-13T20:32:17.633415] Calling API: fetchUsers with token: 31|puBpzuThcKfslGZoH...
+[2026-03-13T20:32:17.678880] Calling API: fetchUsers with token: 31|puBpzuThcKfslGZoH...
+[2026-03-13T20:32:18.370521] Token is valid - can access posts endpoint
+[2026-03-13T20:32:18.396348] Token is valid - can access posts endpoint
+[2026-03-13T20:32:18.652943] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:32:18.723132] Users API decoded response: {st[2026-03-13T20:32:18.723595] Users data received: 0 users
+]}
+[2026-03-13T20:32:18.724024] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:33:06.534683] Calling API: fetchUsers with token: 31|puBpzuThcKfslGZoH...
+[2026-03-13T20:33:06.540869] Calling API: fetchUsers with token: 31|puBpzuThcKfslGZoH...
+[2026-03-13T20:33:07.165929] Token is valid - can access posts endpoint
+[2026-03-13T20:33:07.243025] Token is valid - can access posts endpoint
+[2026-03-13T20:33:07.428524] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T20:33:07.429180] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:33:07.573103] Users API decoded response: {st[2026-03-13T20:33:07.574122] Users data received: 0 users
+]}
+[2026-03-13T20:33:07.574980] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:41:42.926277] ===== TEST 1 START =====
+[2026-03-13T20:42:20.905919] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:21.040684] ERROR: Login network error: ClientException with SocketException: Network is unreachable (OS Error: Network is unreachable, errno = 101), address = testapp.depechesdelatshopo.com, port = 36072, uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:25.355848] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:25.422841] ERROR: Login network error: ClientException with SocketException: Network is unreachable (OS Error: Network is unreachable, errno = 101), address = testapp.depechesdelatshopo.com, port = 38904, uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:26.485216] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:26.535956] ERROR: Login network error: ClientException with SocketException: Network is unreachable (OS Error: Network is unreachable, errno = 101), address = testapp.depechesdelatshopo.com, port = 38918, uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:35.931165] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:35.940663] ERROR: Login network error: ClientException with SocketException: Network is unreachable (OS Error: Network is unreachable, errno = 101), address = testapp.depechesdelatshopo.com, port = 37320, uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:37.012893] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:37.031830] ERROR: Login network error: ClientException with SocketException: Network is unreachable (OS Error: Network is unreachable, errno = 101), address = testapp.depechesdelatshopo.com, port = 37328, uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:37.529721] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:40.592611] ERROR: Login network error: ClientException with SocketException: Network is unreachable (OS Error: Network is unreachable, errno = 101), address = testapp.depechesdelatshopo.com, port = 37330, uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:42.026260] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:42.077206] ERROR: Login network error: ClientException with SocketException: Network is unreachable (OS Error: Network is unreachable, errno = 101), address = testapp.depechesdelatshopo.com, port = 54426, uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:47.047803] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:47.097211] ERROR: Login network error: ClientException with SocketException: Failed host lookup: 'testapp.depechesdelatshopo.com' (OS Error: No address associated with hostname, errno = 7), uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:48.034631] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:48.048185] ERROR: Login network error: ClientException with SocketException: Failed host lookup: 'testapp.depechesdelatshopo.com' (OS Error: No address associated with hostname, errno = 7), uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:48.793571] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:48.852418] ERROR: Login network error: ClientException with SocketException: Failed host lookup: 'testapp.depechesdelatshopo.com' (OS Error: No address associated with hostname, errno = 7), uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:50.151192] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:50.313020] ERROR: Login network error: ClientException with SocketException: Failed host lookup: 'testapp.depechesdelatshopo.com' (OS Error: No address associated with hostname, errno = 7), uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:42:51.127797] Calling API: login with email poly@gmail.com
+[2026-03-13T20:42:51.246466] ERROR: Login network error: ClientException with SocketException: Failed host lookup: 'testapp.depechesdelatshopo.com' (OS Error: No address associated with hostname, errno = 7), uri=https://testapp.depechesdelatshopo.com/api/auth/login
+[2026-03-13T20:44:12.516412] Calling API: login with email poly@gmail.com
+[2026-03-13T20:44:13.823541] Login success for user: poly@gmail.com with role: admin
+[2026-03-13T20:44:13.851295] Token stored successfully
+[2026-03-13T20:44:44.356445] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T20:44:44.418566] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T20:44:45.079337] Token is valid - can access posts endpoint
+[2026-03-13T20:44:45.226125] Token is valid - can access posts endpoint
+[2026-03-13T20:44:45.398535] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:44:45.480424] Users API decoded response: {st[2026-03-13T20:44:45.480869] Users data received: 0 users
+]}
+[2026-03-13T20:44:45.481448] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:45:35.113169] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T20:45:35.119338] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T20:45:35.929181] Token is valid - can access posts endpoint
+[2026-03-13T20:45:36.337419] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:45:39.871473] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T20:45:40.165764] Token is valid - can access posts endpoint
+[2026-03-13T20:45:40.534610] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T20:45:44.127523] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T20:45:44.129375] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T20:45:44.439308] Token is valid - can access posts endpoint
+[2026-03-13T20:45:44.453548] Token is valid - can access posts endpoint
+[2026-03-13T20:45:44.786754] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T20:45:44.787758] Users[2026-03-13T20:45:44.788411] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:13.503056] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:13.504921] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:14.361618] Token is valid - can access posts endpoint
+[2026-03-13T21:00:14.674459] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:15.780993] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:15.783053] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:16.057093] Token is valid - can access posts endpoint
+[2026-03-13T21:00:16.070541] Token is valid - can access posts endpoint
+[2026-03-13T21:00:16.483736] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:18.405546] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:18.407573] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:18.710536] Token is valid - can access posts endpoint
+[2026-03-13T21:00:18.717149] Token is valid - can access posts endpoint
+[2026-03-13T21:00:19.024935] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:19.042833] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:19.980696] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:19.982555] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:20.225639] Token is valid - can access posts endpoint
+[2026-03-13T21:00:20.239343] Token is valid - can access posts endpoint
+[2026-03-13T21:00:20.492189] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:20.492962] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:20.592126] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:20.593799] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:26.401279] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:26.403205] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:26.626524] Token is valid - can access posts endpoint
+[2026-03-13T21:00:26.692138] Token is valid - can access posts endpoint
+[2026-03-13T21:00:26.907853] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:26.908609] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:26.991126] Users API decoded response: {st[2026-03-13T21:00:26.992047] Users data received: 0 users
+]}
+[2026-03-13T21:00:26.992534] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:27.731355] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:27.733219] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:28.038795] Token is valid - can access posts endpoint
+[2026-03-13T21:00:28.357347] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:28.358206] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:28.945633] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:28.947780] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:29.175612] Token is valid - can access posts endpoint
+[2026-03-13T21:00:29.236387] Token is valid - can access posts endpoint
+[2026-03-13T21:00:29.456820] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:29.458431] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:29.555184] Users API Response Body: {"stat[2026-03-13T21:00:29.555858] Users API decoded response: {sta[2026-03-13T21:00:29.556669] Users data received: 0 users
+}
+[2026-03-13T21:00:29.557309] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:33.633499] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:33.636077] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:33.925724] Token is valid - can access posts endpoint
+[2026-03-13T21:00:34.228876] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:34.231108] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:34.263834] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:40.220133] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:40.222093] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:40.579759] Token is valid - can access posts endpoint
+[2026-03-13T21:00:40.857175] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:40.866919] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:40.922889] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:40.925166] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:41.246942] Token is valid - can access posts endpoint
+[2026-03-13T21:00:41.466353] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:41.469905] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:41.562015] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:41.563185] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:42.096302] Token is valid - can access posts endpoint
+[2026-03-13T21:00:42.152067] Token is valid - can access posts endpoint
+[2026-03-13T21:00:42.473493] Users API decoded response: {st[2026-03-13T21:00:42.474475] Users data received: 0 users
+]}
+[2026-03-13T21:00:42.475004] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:43.619162] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:43.620974] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:44.279187] Token is valid - can access posts endpoint
+[2026-03-13T21:00:45.189586] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:52.443236] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:52.445082] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:52.621181] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:52.622965] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:52.788170] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:52.791873] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:52.832840] Token is valid - can access posts endpoint
+[2026-03-13T21:00:52.855376] Token is valid - can access posts endpoint
+[2026-03-13T21:00:52.970971] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:52.977508] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:53.123480] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:53.128392] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:53.178407] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:53.325598] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:53.331584] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:53.351645] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:53.353068] Token is valid - can access posts endpoint
+o users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:53.503741] Token is valid - can access posts endpoint
+[2026-03-13T21:00:53.604638] Token is valid - can access posts endpoint
+[2026-03-13T21:00:53.655007] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:53.658872] Token is valid - can access posts endpoint
+[2026-03-13T21:00:54.065114] Token is valid - can access posts endpoint
+[2026-03-13T21:00:54.133434] Users API Response Body: {"stat[2026-03-13T21:00:54.134988] Users API decoded response: {sta[2026-03-13T21:00:54.135969] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:54.238193] Token is valid - can access posts endpoint
+[2026-03-13T21:00:54.252974] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:54.254154] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:54.392038] Users API decoded response: {st[2026-03-13T21:00:54.392467] Users data received: 0 users
+]}
+[2026-03-13T21:00:54.392881] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:54.493059] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:54.494041] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:54.826257] Users API Response Body: {"stat[2026-03-13T21:00:54.827006] Users API decoded response: {sta[2026-03-13T21:00:54.828187] Users data received: 0 users
+}
+[2026-03-13T21:00:54.829170] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:54.838144] Users API Response Body: {"stat[2026-03-13T21:00:54.838967] Users API decoded response: {sta[2026-03-13T21:00:54.839801] Users data received: 0 users
+}
+[2026-03-13T21:00:54.840459] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:00:57.673022] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:57.703265] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:00:57.957375] Token is valid - can access posts endpoint
+[2026-03-13T21:00:57.959660] Token is valid - can access posts endpoint
+[2026-03-13T21:00:58.245404] Users API decoded response: {status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:00:58.245961] Users[2026-03-13T21:00:58.246650] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:26:40.556929] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:26:40.558897] Calling API: fetchUsers with token: 32|mViFASfveK7lDekv7...
+[2026-03-13T21:26:41.255507] Token is valid - can access posts endpoint
+[2026-03-13T21:26:41.393544] Token is valid - can access posts endpoint
+[2026-03-13T21:26:41.559301] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:26:41.560007] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:26:41.645886] Users API Response Body: {"stat[2026-03-13T21:26:41.647002] Users data received: 0 users
+sta[2026-03-13T21:26:41.647579] WARNING: Users API returned empty array - no users found. This might be due to insufficient permissions or role restrictions.
+[2026-03-13T21:30:42.839961] ===== TEST 1 START =====
+[2026-03-13T21:31:00.117676] Calling API: login with email poly@gmail.com
+[2026-03-13T21:31:01.055001] Login success for user: poly@gmail.com with role: admin
+[2026-03-13T21:31:01.077896] Token stored successfully
+[2026-03-13T21:31:03.675349] Calling API: fetchUsers with token: 33|V2mxVkPVVcbXr0GQO...
+[2026-03-13T21:31:03.732857] Calling API: fetchUsers with token: 33|V2mxVkPVVcbXr0GQO...
+[2026-03-13T21:31:04.410917] Token is valid - can access posts endpoint
+[2026-03-13T21:31:04.581808] Token is valid - can access posts endpoint
+[2026-03-13T21:31:04.685067] WARNING: Users API returned empty array - no users found
+ retrieved successfully, data: []}
+[2026-03-13T21:31:04.893868] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:31:04.894396] WARNING: Users API returned empty array - no users found
+[2026-03-13T21:31:07.445023] Calling API: fetchUsers with token: 33|V2mxVkPVVcbXr0GQO...
+[2026-03-13T21:31:07.447295] Calling API: fetchUsers with token: 33|V2mxVkPVVcbXr0GQO...
+[2026-03-13T21:31:07.667517] Token is valid - can access posts endpoint
+[2026-03-13T21:31:07.788972] Token is valid - can access posts endpoint
+[2026-03-13T21:31:07.943115] Users API decoded response: {st[2026-03-13T21:31:07.943554] Users data received: 0 users
+]}
+[2026-03-13T21:31:07.943964] WARNING: Users API returned empty array - no users found
+[2026-03-13T21:31:08.042344] Users data received: 0 users
+status: true, message: Users retrieved successfully, data: []}
+[2026-03-13T21:31:08.043135] WARNING: Users API returned empty array - no users found
