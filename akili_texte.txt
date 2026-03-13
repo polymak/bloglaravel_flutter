@@ -1,0 +1,6 @@
+Analyse le code ci-dessous afin de récupérer uniquement le design, sans les éléments ni les données, pour appliquer ce design aux données déjà existantes dans cette application/projet.
+
+S’il vous plaît, ne prenez pas tout le contenu du code ci-dessous. Appliquez seulement le design aux fonctionnalités existantes, sans créer de nouvelles données ni ajouter des éléments qui ne font pas partie des fonctionnalités déjà présentes.
+
+Page concernée : http://127.0.0.1:8000/
+

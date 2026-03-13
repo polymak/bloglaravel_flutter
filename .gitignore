@@ -1,0 +1,38 @@
+# PHPUnit
+/.phpunit.cache
+.phpunit.result.cache
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Build frontend
+/public/storage
+
+# Laravel storage (NE JAMAIS VERSIONNER)
+/storage/*
+!/storage/.gitignore
+
+# Laravel cache
+/bootstrap/cache/*.php
+
+# Vendor (composer)
+/vendor
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Auth
+auth.json
+
+# IDE
+/.fleet
+/.idea
+/.vscode

@@ -1,0 +1,120 @@
+API ENDPOINTS - Blog Laravel/Flutter Application
+
+Base URL: https://testapp.depechesdelatshopo.com/api/
+
+APPLICATION OVERVIEW:
+Blog application with Laravel backend and Flutter frontend, featuring social media-inspired design (X.com/Facebook.com style). Provides complete CRUD operations for blog posts with user authentication and image management.
+
+AUTHENTICATION:
+- POST /api/auth/register - User registration
+- POST /api/auth/login - User login
+- GET /api/user - Get current user info (protected)
+- POST /api/auth/logout - Logout user (protected)
+
+PUBLIC ENDPOINTS:
+- GET /api/posts - Get all posts (no auth required)
+- GET /api/posts/{id} - Get specific post by ID
+- GET / - Homepage displaying latest articles (no auth required)
+
+PROTECTED ENDPOINTS:
+- POST /api/posts - Create new post
+  - Flutter Implementation: 
+    - Form fields: title (String), content (String), image (File)
+    - Request: FormData with multipart upload
+    - Headers: Authorization: Bearer {token}
+    - Response: JSON with post data and image URL
+- PUT /api/posts/{id} - Update existing post
+  - Flutter Implementation:
+    - Same as POST but with existing post ID
+    - Optional image field (can be null for text-only updates)
+- DELETE /api/posts/{id} - Delete post
+  - Flutter Implementation:
+    - Simple DELETE request with post ID
+    - Automatic image cleanup on server
+
+USER MANAGEMENT ENDPOINTS:
+- GET /api/users - Get all users (admin only)
+- GET /api/users/{id} - Get specific user (admin only)
+- POST /api/users - Create new user (admin only)
+  - Flutter Implementation:
+    - Form fields: name (String), email (String), password (String), role (String)
+    - Validation: Email format, password strength
+    - Response: User data with role assignment
+- PUT /api/users/{id} - Update user (admin only)
+  - Flutter Implementation:
+    - Edit existing user details
+    - Role management interface
+- DELETE /api/users/{id} - Delete user (admin only)
+  - Flutter Implementation:
+    - Confirmation dialog required
+    - Cascade deletion handling
+
+FLUTTER INTEGRATION DETAILS:
+- Authentication: JWT tokens stored in SharedPreferences
+- Image Upload: Multi-part form data with progress indicators
+- Error Handling: Custom error messages for form validation
+- State Management: Provider/BLoC for API state management
+- Offline Support: Local caching with sync capabilities
+
+FLUTTER POST CREATION WORKFLOW:
+1. Authentication Check
+   - Verify JWT token validity
+   - Redirect to login if expired
+
+2. Form Implementation
+   - Text fields for title and content with validation
+   - Image picker with preview functionality
+   - Real-time validation feedback
+
+3. API Request Structure
+   ```dart
+   FormData formData = FormData.fromMap({
+     'title': titleController.text,
+     'content': contentController.text,
+     'image': await MultipartFile.fromFile(imagePath, filename: 'post_image.jpg'),
+   });
+   
+   Response response = await dio.post(
+     '$baseUrl/api/posts',
+     data: formData,
+     options: Options(
+       headers: {'Authorization': 'Bearer $token'},
+     ),
+   );
+   ```
+
+4. Response Handling
+   - Success: Navigate to post detail page
+   - Error: Display validation errors
+   - Image upload progress: Show upload indicator
+
+FLUTTER USER MANAGEMENT WORKFLOW:
+1. Admin Dashboard
+   - List view of all users with role indicators
+   - Search and filter functionality
+   - Action buttons for edit/delete
+
+2. User Creation Form
+   - Fields: Name, Email, Password, Role selection
+   - Email format validation
+   - Password strength requirements
+   - Role-based permissions setup
+
+3. User Update Interface
+   - Pre-filled form with existing data
+   - Role modification capabilities
+   - Password change option (with confirmation)
+
+4. Security Considerations
+   - Admin-only access to user endpoints
+   - Audit logging for user management actions
+   - Confirmation dialogs for destructive operations
+
+FEATURES:
+- JWT token authentication via Laravel Sanctum
+- Image upload and management for posts
+- User role-based access (user/admin)
+- Responsive web interface with hamburger menu
+- Mobile-first Flutter frontend
+- RESTful API design with consistent JSON responses
+- Local development on https://testapp.depechesdelatshopo.com/api/
