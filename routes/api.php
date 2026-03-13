@@ -27,14 +27,20 @@ Route::prefix('auth')->group(function () {
 Route::get('posts', [PostController::class, 'index']);
 Route::get('posts/{post}', [PostController::class, 'show']);
 
+// Public routes for users (read-only)
+Route::get('users', [UserController::class, 'index']);
+
 // Protected routes (authentication required)
 Route::middleware('auth:sanctum')->group(function () {
     // Authentication routes
     Route::get('user', [AuthController::class, 'user']);
     Route::post('logout', [AuthController::class, 'logout']);
 
-    // User routes
-    Route::apiResource('users', UserController::class);
+    // User routes (write operations only)
+    Route::post('users', [UserController::class, 'store']);
+    Route::put('users/{user}', [UserController::class, 'update']);
+    Route::delete('users/{user}', [UserController::class, 'destroy']);
+    Route::get('users/{user}', [UserController::class, 'show']);
 
     // Post routes (write operations only)
     Route::post('posts', [PostController::class, 'store']);
